@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	line-height: 1.5em;
 	font-size: 15px;
+	letter-spacing: 0.02em;
 }
 
 .container {
@@ -16,10 +17,10 @@ div, p, form, input, a, span, button {
 	box-sizing: border-box;
 }
 
-
 p {
 	margin: 0;
 	line-height: 1.5em;
+	letter-spacing: 0.02em;
 }
 
 ul, li {
@@ -31,15 +32,18 @@ ul, li {
 h1 {
 	font-size: 23px;
 	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }
 
 h2 {
 	font-size: 19px;
 	text-transform: uppercase;
+	letter-spacing: 0.02em;
 }
 
 h3 {
 	font-size: 17px;
+	letter-spacing: 0.02em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 .navigation {
 	background: #455991;
 	color: #fff;
-	padding: 35px 0 31px 0;
+	padding: 35px 0 30px 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -71,7 +75,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
 	display: flex;
-	margin-left: 55px;
+	justify-content: space-between;
+	margin: 1px 0 0 60px;
+	text-decoration: none;
+	border-bottom: 1px #fff;
 }
 
 .menu li:not(:last-child) {
@@ -79,12 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu li a {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
 	color: #fff;
-
 }
-
 
 .order {
 	color: #fff;
@@ -101,45 +106,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main {
-	margin: 77px 0 39px 0;
+	padding: 77px 0 37px 0;
 }
 
 .intro {
 	font-size: 14px;
 	font-weight: normal;
 	color: #828899;
-	padding-top: 17px;
+	margin-top: 17px;
 	line-height: 1.6em;
 }
 
 .cards {
 	display: flex;
 	justify-content: space-between ;
+	align-items: flex-start;
 	line-height: 1.4em;
 }
 
-.card-one {
+.card {
 	border: 1px solid #d4d4d4;
-	padding: 25px 25px 30px 30px;
+	padding: 27px 27px 25px 29px;
 	width: 308px;
-	height: 222px;
+}
+
+.cards p {
+	margin-top: 13px;
+}
+
+.card:not(:last-child) {
 	margin-right: 17px;
 }
 
 .card-two {
-	padding: 25px 25px 30px 30px;
 	border-radius: 15px;
-	width: 308px;
-	height: 222px;
-	margin-right: 17px;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
-}
-
-.card-tree {
-	border: 1px solid #d4d4d4;
-	padding: 25px 25px 30px 30px;
-	width: 308px;
-	height: 250px;
 }
 
 .card-tree .url {
@@ -147,51 +148,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	color: #22a2ec;
 	text-decoration: none;
-	padding-top: 8px;
+	margin-top: 7px;
 	display: block;
-}
-
-.cards p {
-	padding-top: 13px;
-}
-
-.form input {
-	border: 1px solid #d6d6d6;
-	font-size: 15px;
-	width: 239px;
-	padding: 14px 18px 15px 20px;
-	background: transparent;
-	font-family: Arial, sans-serif;
-	margin-bottom: 10px;
-	color: #000;
-}
-
-textarea {
-	border: 1px solid #d6d6d6;
-	font-size: 15px;
-	width: 319px;
-	height: 91px;
-	padding: 14px 18px 15px 20px;
-	background: transparent;
-	font-family: Arial, sans-serif;
-	margin-bottom: 6px;
-	color: #000;
-}
-
-.send {
-	margin-top: 12px;
-	background: #ebce0d;
-	font-weight: bold;
-	font-size: 15px;
-	color: #000;
-	text-decoration: none;
-	display: block;
-	padding: 13px 0;
-	text-align: center;
-	width: 166px;
-	font-family: Arial, sans-serif;
-	border: none;
-	cursor: pointer;
 }
 
 .inform {
@@ -202,43 +160,94 @@ textarea {
 	font-size: 12px;
 	color: #84898d;
 	font-weight: normal;
-	padding-top: 17px;
+	margin-top: 17px;
 }
 
 .registration {
 	width: 360px;
-	margin-top: 49px;
+	padding: 50px 0 66px 0;
 }
 
 .registration h2 {
-	padding-bottom: 37px;
+	margin-bottom: 37px;
+	letter-spacing: 0.02em;
+}
+
+.form input {
+	border: 1px solid #d6d6d6;
+	font-size: 15px;
+	width: 239px;
+	padding: 14px 18px 15px 22px;
+	background: transparent;
+	font-family: Arial, sans-serif;
+	margin-bottom: 9.5px;
+	color: #000;
+}
+
+textarea {
+	border: 1px solid #d6d6d6;
+	font-size: 15px;
+	width: 318px;
+	height: 92px;
+	padding: 14px 18px 15px 22px;
+	background: transparent;
+	font-family: Arial, sans-serif;
+	color: #000;
+	resize: none;
+	letter-spacing: 0.02em;
+}
+
+.send {
+	margin-top: 18px;
+	background: #ebce0d;
+	font-weight: bold;
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	padding: 13px 0 13px 9px ;
+	text-align: center;
+	width: 166px;
+	font-family: Arial, sans-serif;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 0.02em;
 }
 
 .card-color {
 	background: #184c6b;
 	color: #c0ddee;
-	width: 546px;
-	height: 456px;
 	border-radius: 10px;
-	padding: 40px 42px 40px 42px ;
+	padding: 42px 47px 34px 43px ;
 	margin: 47px 0 70px 53px;
+}
+
+.caption h3 {
+	text-transform: uppercase;
 }
 
 .nocaption {
 	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
 	font-size: 14px;
 }
 
-.no-picture p {
-	padding-left: 40px;
+.with-picture {
+	margin-top: 21px;
+}
+
+.no-picture {
+	margin: 21px 0 0 38px;
 }
 
 .with-picture p {
-	padding-bottom: 18px;
+	margin-bottom: 18px;
 }
 
-.nopicture {
-	margin-left: 32px;
+.img-card {
+	width: 208px;
+	height: 122px;
 }
 
 .section .container {
@@ -246,22 +255,12 @@ textarea {
 	justify-content: space-between;
 }
 
-.img-card {
-	width: 206px;
-	height: 122px;
-}
-
-.caption h3 {
-	text-transform: uppercase;
-	padding-bottom: 23px;
-}
-
 .text {
 	background: #455991;
 	color: #fff;
 	padding: 30px 0 35px 0;
 	font-size: 13px;
-	
+	letter-spacing: 0.02em;
 }
 
 .footer .container {
@@ -282,6 +281,8 @@ textarea {
 	width: 145px;
 	height: 37px;
 	font-family: Arial, sans-serif;
+	letter-spacing: 0.02em;
+	margin-top: 2px;
 }
 
 .two {
@@ -296,7 +297,8 @@ textarea {
 	width: 148px;
 	height: 37px;
 	font-family: Arial, sans-serif;
-	margin-left: 3px;
+	letter-spacing: 0.02em;
+	margin-top: 1px;
 }
 
 .excerpt {
@@ -312,11 +314,10 @@ textarea {
 	font-family: Arial, sans-serif;
 	text-align: center;
 	padding: 12px 5px 12px 0;
-	margin-right: 5px;
 }
 
 .box {
 	display: flex;
 	justify-content: space-between;
-	width: 598px;
+	width: 595px;
 }
